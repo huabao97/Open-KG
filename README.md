@@ -1,7 +1,7 @@
 [English](README.md) | 简体中文
 
 <p align="center">
- <img src="./doc/OpenKG.png" align="middle" width = "600"/>
+ <img src="./doc/OpenKG.png" align="middle" width = "300"/>
 <p align="center">
 <p align="left">
     <a href="./LICENSE"><img src="https://img.shields.io/badge/license-Apache%202-dfd.svg"></a>
