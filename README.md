@@ -20,4 +20,5 @@ Open-KG源自于东华大学智能制造研究所，旨在打造一套丰富、�
 
 ## 近期更新
 
-- **🔥冶金领域设备运维大规模知识图谱在OpenKG.CN中文开放知识图谱即将开源**
+- **🔥冶金领域设备运维大规模知识图谱在OpenKG.CN中文开放知识图谱已开源：[运维知识图谱](http://www.openkg.cn/dataset/qm-data)**
+- **🔥运维履历检索系统Q&M history document retrieval system即将开源**
