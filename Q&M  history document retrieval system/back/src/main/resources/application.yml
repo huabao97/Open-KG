@@ -1,0 +1,25 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /api
+
+qiniu:
+  ## 此处填写你自己的七牛云 access key
+  accessKey: qoG8oINefmhwMizJ5HZlTX5Gwf7sHGjx400gm5e5
+  ## 此处填写你自己的七牛云 secret key
+  secretKey: C5q2dWWN6YbFGTeNQ5_FUgdvmYgCvaKy1b_b7any
+  ## 此处填写你自己的七牛云 bucket
+  bucket: openkg2
+  ## 此处填写你自己的七牛云 域名
+  prefix: rb6r6yzqk.hd-bkt.clouddn.com
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  servlet:
+    multipart:
+      enabled: true
+      location: /home/table/tmp
+#      location: D:/Open-KG/Open-KG/src/main/resources/static/tmp
+      file-size-threshold: 10MB
+      max-file-size: 20MB
