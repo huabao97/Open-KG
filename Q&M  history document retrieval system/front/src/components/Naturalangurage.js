@@ -17,15 +17,32 @@ export default class Naturalangurage extends Component {
 
     getData = async () => {
         // 分词
-        await axios.post('http://124.221.220.105:8081/api/nlp/segment', this.state.InputText).then(
-            response => { return this.setState({ SegmentWord: response.data.data }) }
-        )
+        const segment = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json;charset=UTF-8' },
+            data: this.state.InputText,
+            url: 'http://124.221.220.105:8081/api/nlp/segment'
+        }
+        await axios(segment).then(response => { return this.setState({ SegmentWord: response.data.data }) })
+
         // 依存句法分析
-        await axios.post('http://124.221.220.105:8081/api/nlp/semantic', this.state.InputText).then(
-            response => { return this.setState({ Semantic: response.data.data }) }
-        )
+        const semantic = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json;charset=UTF-8' },
+            data: this.state.InputText,
+            url: 'http://124.221.220.105:8081/api/nlp/semantic'
+        }
+        await axios(semantic).then(response => { return this.setState({ Semantic: response.data.data }) })
+
+
         // 词性标注
-        await axios.post('http://124.221.220.105:8081/api/nlp/tagger', this.state.InputText).then(
+        const tagger = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json;charset=UTF-8' },
+            data: this.state.InputText,
+            url: 'http://124.221.220.105:8081/api/nlp/tagger'
+        }
+        await axios(tagger).then(
             response => { return this.setState({ Tagger: response.data.data }) },
             error => { console.log(error) }
         )

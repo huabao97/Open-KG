@@ -28,29 +28,52 @@ export default class Knowledgeextract extends Component {
                 // invalidation // a promise to stop the simulation when the cell is re-run
             })
         }
+
         // 发送请求命名实体识别
-        await axios.post("http://124.221.220.105:8081/api/KG/entity", this.state.InputText).then(
+        const entity = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json;charset=UTF-8' },
+            data: this.state.InputText,
+            url: 'http://124.221.220.105:8081/api/KG/entity'
+        }
+        await axios(entity).then(
             response => {
+                console.log(response.data)
                 const Kgners = response.data.data
                 return this.setState({ Kgner: Kgners })
             }
         )
 
         // 发送请求关系抽取
-        await axios.post("http://124.221.220.105:8081/api/KG/relation", this.state.InputText).then(
+        const relation = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json;charset=UTF-8' },
+            data: this.state.InputText,
+            url: 'http://124.221.220.105:8081/api/KG/relation'
+        }
+        await axios(relation).then(
             response => {
                 const KeyWord = response.data.data
+                console.log(KeyWord)
                 return this.setState({ KeyWord: KeyWord })
             }
         )
 
         // 发送请求知识图谱节点-边
-        await axios.post("http://124.221.220.105:8081/api/KG/graph", this.state.InputText).then(
+        const graph = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json;charset=UTF-8' },
+            data: this.state.InputText,
+            url: 'http://124.221.220.105:8081/api/KG/graph'
+        }
+        await axios(graph).then(
             response => {
                 let data = JSON.parse(response.data.data)
+                console.log(data)
                 return this.setState({ data: data.data })
             }
         )
+
     }
 
     render() {
