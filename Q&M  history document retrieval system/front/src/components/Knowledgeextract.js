@@ -10,8 +10,18 @@ export default class Knowledgeextract extends Component {
         Kgner: "",
         KeyWord: "",
         data: {
-            "nodes": [],
-            "edges": []
+            "nodes": [
+                { "id": "Napoleon", "group": 1 }, { "id": "Mlle.Baptistine", "group": 1 }, { "id": "Mme.Magloire", "group": 1 }, { "id": "CountessdeLo", "group": 1 },
+                { "id": "Geborand", "group": 1 }, { "id": "Champtercier", "group": 1 }, { "id": "Cravatte", "group": 1 }, { "id": "Count", "group": 2 },
+                { "id": "OldMan", "group": 1 }, { "id": "Labarre", "group": 2 },
+            ],
+            "edges": [
+                { "source": "Napoleon", "target": "Mlle.Baptistine", "value": 2 }, { "source": "Napoleon", "target": "Mme.Magloire", "value": 2 },
+                { "source": "Napoleon", "target": "CountessdeLo", "value": 2 }, { "source": "Napoleon", "target": "Geborand", "value": 2 },
+                { "source": "Napoleon", "target": "Champtercier", "value": 2 }, { "source": "Napoleon", "target": "Cravatte", "value": 2 },
+                { "source": "Napoleon", "target": "Count", "value": 2 }, { "source": "Napoleon", "target": "OldMan", "value": 2 },
+                { "source": "Napoleon", "target": "Labarre", "value": 2 },
+            ]
         }
     }
     addData = async (e) => { await this.setState({ InputText: e.target.value }) }
@@ -111,7 +121,7 @@ export default class Knowledgeextract extends Component {
                     <div>
                         <br /><br />
                         <h2 className="知识图谱" style={{ fontWeight: "bold" }}>知识图谱结果</h2>
-                        <div style={{ width: "2000px" }}><svg className="svgs" width="1000" height="1000" ></svg></div>
+                        <div style={{ width: "1400px" }}><svg className="svgs" height="1000px" ></svg></div>
                     </div>
                 </Card>
             </div>
