@@ -18,6 +18,11 @@ Open-KG源自于东华大学智能制造研究所，旨在打造一套丰富、�
     <img src="./doc/non.png" width="800">
 </div>
 
+### 总监控原型-[demo](https://3u8d6g.axshare.com/)
+<div align="center">
+    <img src="./doc/sys.png" width="1000">
+ <div>
+
 ## 近期更新
 
 - **🔥冶金领域设备运维大规模知识图谱在OpenKG.CN中文开放知识图谱已开源：[运维知识图谱](http://www.openkg.cn/dataset/qm-data)**
