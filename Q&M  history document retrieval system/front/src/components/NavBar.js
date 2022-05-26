@@ -31,7 +31,7 @@ class NavBar extends React.Component {
     render() {
         return (
             <div>
-                <div style={{ width: "15 %", position: "absolute" }}>
+                <div style={{ width: "15 %", position: "fixed" }}>
                     <Button type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>{React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}</Button>
                     <Menu mode="inline" theme="dark" inlineCollapsed={this.state.collapsed} style={{ height: "1000px" }} >
                         <Menu.Item key="homepage" icon={<MailOutlined />} ><Link className="list-group-item" to="/Homepage">首页</Link></Menu.Item>
@@ -40,10 +40,10 @@ class NavBar extends React.Component {
                         <Menu.Item key="natureallanghanle" icon={<MailOutlined />} ><Link className="list-group-item" to="/Naturalangurage">自然语言处理</Link></Menu.Item>
                         <Menu.Item key="CompanySearch" icon={<MailOutlined />}><Link className="list-group-item" to="/Knowledgeextract">知识抽取</Link></Menu.Item>
                         <Menu.Item key="repairevisialby" icon={<MailOutlined />}><Link className="list-group-item" to="/Visulaizrepaire">运维知识图谱可视化</Link></Menu.Item>
-                        <Menu.Item key="SearchInventoryByName" icon={<UsergroupAddOutlined />}><Link className="list-group-item" to="/Similarfile">相似文档</Link></Menu.Item>
+                        <Menu.Item key="SearchInventoryByName" icon={<UsergroupAddOutlined />}><Link className="list-group-item" to="/Similarfile">相似检索</Link></Menu.Item>
                     </Menu>
                 </div>
-                <div style={{ position: "absolute", top: "5%", left: "15%", width: "75%" }}>
+                <div style={{ position: "absolute", top: "5%", left: "15%", width: "85%" }}>
                     <Routes>
                         <Route path='/Fileanaly' element={<Fileanaly />} />
                         <Route path='/Fileorgnize' element={<Fileorgnize />} />

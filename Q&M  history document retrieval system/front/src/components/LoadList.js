@@ -79,38 +79,38 @@ export default class LoadList extends Component {
                         <Checkbox.Group onChange={this.onChange}>
                             <Row>
                                 <Col span={6}>
-                                    <Checkbox value="A" ><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png?x-oss-process=image/blur,r_50,s_50/quality,q_1/resize,m_mfit,h_200,w_200"></Image></Checkbox>
+                                    <Checkbox value="A" ><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                                 <Col span={6}>
-                                    <Checkbox value="B"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image></Checkbox>
+                                    <Checkbox value="B"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                                 <Col span={6}>
-                                    <Checkbox value="C"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image></Checkbox>
+                                    <Checkbox value="C"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                                 <Col span={6}>
-                                    <Checkbox value="D"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image></Checkbox>
+                                    <Checkbox value="D"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                                 <Col span={6}>
-                                    <Checkbox value="E"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image></Checkbox>
+                                    <Checkbox value="E"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                                 <Col span={6}>
-                                    <Checkbox value="g"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image></Checkbox>
+                                    <Checkbox value="g"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                                 <Col span={6}>
-                                    <Checkbox value="f"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image></Checkbox>
+                                    <Checkbox value="f"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                                 <Col span={6}>
-                                    <Checkbox value="h"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image></Checkbox>
+                                    <Checkbox value="h"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                                 <Col span={6}>
-                                    <Checkbox value="g"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image></Checkbox>
+                                    <Checkbox value="g"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                                 <Col span={6}>
 
-                                    <Checkbox value="f"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image></Checkbox>
+                                    <Checkbox value="f"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                                 <Col span={6}>
-                                    <Checkbox value="h"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image></Checkbox>
+                                    <Checkbox value="h"><Image style={{ width: "100", height: "200px", paddingTop: "35px", paddingBottom: "35px" }} src={require("../img/1.png")}></Image></Checkbox>
                                 </Col>
                             </Row>
                         </Checkbox.Group>,

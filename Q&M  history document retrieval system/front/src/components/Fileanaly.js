@@ -7,14 +7,18 @@ const { Search } = Input;
 const onSearch = value => console.log(value);
 const { Option } = Select;
 const data = [
-    'Racing car sprays burning fuel into crowd.',
-    'Japanese princess to wed commoner.',
-    'Australian walks 100km after outback crash.',
-    'Man charged over missing wedding girl.',
-    'Los Angeles battles huge wildfires.',
-    'Australian walks 100km after outback crash.',
-    'Man charged over missing wedding girl.',
-    'Los Angeles battles huge wildfires.',
+    '口 2020.1.1热轧2050区域5#车柱赛泵更换设备故障报告书                    编码：BSGGL109101M01',
+    '口 2020.1.3 钢管3-3#行车副卷钢丝绳卡死设备故障调查单及处理通报                 编码：BSGGL109101N05',
+    '口 2020.1.1 热轧2050区域5#车柱塞泵更换设备故障报告书                   编码：BSGGL109101M01',
+    '口 2020.1.1 热轧2050区域5#车柱塞泵更换设备故障报告书                   编码：BSGGL109101N05',
+    '口 2020.1.15 热轧2050区域5号车夹钳油柱塞泵泵更换故障调查单                 编码：BSGGL109101N02',
+    '口 2020.1.1 热轧2050区域5#车柱塞泵更换设备故障报告书                   编码：BSGGL109101M01',
+    '口 2020.1.3 钢管3-3#行车副卷钢丝绳卡死设备故障调查单及处理通报                 编码：BSGGL109101M01',
+    '口 2020.1.15 热轧2050区域5号车夹钳油柱塞泵泵更换故障调查单                 编码：BSGGL109101M01',
+    '口 2020.1.15 热轧2050区域5号车夹钳油柱塞泵泵更换故障调查单                         编码：BSGGL109101M01',
+    '口 2020.1.3 钢管3-3#行车副卷钢丝绳卡死设备故障调查单及处理通报                 编码：BSGGL109101M01',
+    '口 2020.1.1 热轧2050区域5#车柱塞泵更换设备故障报告书                   编码：BSGGL109101M01',
+    '口 2020.1.15 热轧2050区域5号车夹钳油柱塞泵泵更换故障调查单                 编码：BSGGL109101M01',
 ];
 
 export default class Fileanaly extends Component {

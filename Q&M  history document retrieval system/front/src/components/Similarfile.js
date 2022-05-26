@@ -8,15 +8,13 @@ const columns = [
     { title: '编码', dataIndex: 'key', }, { title: '运维履历文档名称', dataIndex: 'repairename', }, { title: '形似度值', dataIndex: 'similarity', },
     { title: '表示向量', dataIndex: 'reprenstation', }, { title: '详情', dataIndex: 'details', },
 ];
-const datas = [];
-for (let i = 0; i < 15; i++) {
-    datas.push({
-        key: i,
-        repairename: `Edward King ${i}`,
-        similarity: 32,
-        reprenstation: `London, Park Lane no. ${i}`,
-    });
-}
+const datas = [
+    { key: ' BSGGL109101M01', repairename: `2-3行车大车无法自动运行`, similarity: 0.95, reprenstation: `[0.9999862313270569，0.9979482293128967，...，0.9977192878723145]`, },
+    { key: ' BSGGL109101M02', repairename: `3-1行车小车无动作`, similarity: 0.93, reprenstation: `[0.9659231901168823，-0.15383778512477875，...，0.9980121850967407]`, },
+    { key: ' BSGGL109101M03', repairename: `1-1行车小车运行异常`, similarity: 0.89, reprenstation: `[-0.9999997615814209，0.9997295141220093，...， -0.9998258352279663]`, },
+    { key: ' BSGGL109101M05', repairename: `3-1行车小车运行故障`, similarity: 0.86, reprenstation: `[0.9999998807907104，0.9992198348045349，...， 0.9974446892738342]`, },
+    { key: ' BSGGL109101M06', repairename: `3-3行车小车突然停止运行`, similarity: 0.85, reprenstation: `[0.999970018863678, 0.44562971591949463，...， 0.47310030460357666] `, },
+];
 
 export default class Similarfile extends Component {
     state = { selectedRowKeys: [], };
@@ -70,7 +68,7 @@ export default class Similarfile extends Component {
                     <div style={{ display: "inline-block", width: "45%", verticalAlign: "top" }}>
                         <h2 style={{ fontWeight: "bold" }} >故障调查单解析</h2>
                         <Card style={{ position: "relative", width: "100%", height: "900px" }}>
-                            <Image style={{ margin: "0 auto" }} src={require('C:/Users/86187/Pictures/Saved Pictures/2050板坯库2#行车大车被动轮异音故障报告书/1.png')}></Image>
+                            <Image style={{ margin: "0 auto" }} src={require('../img/1.png')}></Image>
                         </Card><br /><br />
                         <div style={{ height: "100px" }}>
                             <Button type="primary" shape="round" >上传到本地</Button><br /><br />
@@ -85,15 +83,15 @@ export default class Similarfile extends Component {
                 </Card>
                 {/* 处理表格 */}
                 <Card style={{ marginTop: "40px" }}>
-                    <div style={{ marginBottom: 8 }}>
-                        <Space>检索结果</Space>
-                        <Space>阈值：<Input placeholder='默认85%'></Input></Space>
-                        <Space>TopN:<Input placeholder='默认N为5'></Input></Space>
-                        <Button >查询</Button>
-                        <Button>重置</Button>
-                        <Button>导出</Button>
+                    <div style={{ marginBottom: 8, height: "40px" }}>
+                        <Space style={{ marginTop: "5px" }}>检索结果</Space>
+                        <Space style={{ position: "absolute", left: "15%" }}>阈值：<Input placeholder='默认85%'></Input></Space>
+                        <Space style={{ position: "absolute", left: "40%" }}>TopN:<Input placeholder='默认N为5'></Input></Space>
+                        <Button type='primary' style={{ position: "absolute", left: "67%" }}>查询</Button>
+                        <Button style={{ position: "absolute", left: "75%" }}>重置</Button>
+                        <Button style={{ position: "absolute", left: "92%" }}>导出</Button>
                     </div>
-                    <Table rowSelection={rowSelection} columns={columns} dataSource={data} />
+                    <Table rowSelection={rowSelection} columns={columns} dataSource={datas} />
                 </Card>
                 <Card style={{ marginTop: "10px" }}>
                     <h2 style={{ fontWeight: "bold" }}>相似的运维履历文档知识图谱</h2>

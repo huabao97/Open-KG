@@ -10,7 +10,8 @@ export default class Visulaizrepaire extends Component {
             <div>
                 <Card style={{ textAlign: "right" }}><UserBar /></Card>
                 <div style={{ marginTop: "10px" }} >
-                    <h2><a href='http://124.221.220.105:8088/neo4j/' target="Viewergraph">运维知识图谱可视化</a></h2>
+                    <h2>运维知识图谱可视化</h2>
+                    <Button type="default" style={{ position: "absolute", left: "80%" }} ><a href='http://124.221.220.105:8088/neo4j/' target="Viewergraph">显示</a></Button>
                     <Button type="default" style={{ position: "absolute", left: "88%" }} >刷新</Button>
                     <Button type="default" style={{ position: "absolute", left: "95%" }}>返回</Button>
                 </div>
